@@ -19,12 +19,12 @@
 // | ESC |  F  |  L  |  H  |  V  |  Z  |   |  Q  |  W  |  U  |  O  |  Y  |  ;  |
 // | TAB |  S  |  R  |  N  |  T  |  K  |   |  C  |  D  |  E  |  A  |  I  |  -  |
 // | CTL |  X  |  "  |  B  |  M  |  J  |   |  P  |  G  |  ,  |  .  |  /  | ENT |
-//                   | ALT | BSP | SPC |   | RPT | SFT | GUI |
+//                   | ALT | BSP | SPC |   | SFT | RPT | GUI |
                         bindings = <
-   &kp ESC   &kp F &kp L &kp H &kp V &kp Z   &kp Q &kp W  &kp U     &kp Y   &kp Y    &kp SQT
-   &kp TAB   &kp S &kp R &kp N &kp T &kp K   &kp D &kp E  &kp A     &kp A   &kp I    &kp MINUS
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-               &kp RALT &kp BKSP &kp SPACE   &kp RSHFT &kp RSHFT &kp RGUI
+   &kp ESC   &kp F &kp L   &kp H &kp V &kp Z   &kp Q &kp W  &kp U     &kp O   &kp Y    &kp SEMI
+   &kp TAB   &kp S &kp R   &kp N &kp T &kp K   &kp C &kp D  &kp E     &kp A   &kp I    &kp MINUS
+   &kp LCTRL &kp X &kp SQT &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
+                 &kp RALT &kp BKSP &kp SPACE   &kp RSHFT &kp RSHFT &kp RGUI
                         >;
                 };
                 lower_layer {
