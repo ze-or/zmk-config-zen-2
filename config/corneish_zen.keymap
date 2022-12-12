@@ -23,8 +23,8 @@
                         bindings = <
    &kp ESC   &kp F &kp L   &kp H &kp V &kp Z   &kp Q &kp W  &kp U     &kp O   &kp Y    &kp SEMI
    &kp TAB   &kp S &kp R   &kp N &kp T &kp K   &kp C &kp D  &kp E     &kp A   &kp I    &kp MINUS
-   &kp LCTRL &kp X &kp SQT &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-                 &kp RALT &kp BKSP &kp SPACE   &kp RSHFT &kp UNDER &kp RGUI
+   &kp LCTRL &kp X &kp SQT &kp B &kp M &kp J   &kp P &kp G  &kp COMMA &kp DOT &kp FSLH &kp RET
+                 &kp RALT &kp BKSP &kp SPACE   &key_repeat &kp RSHFT &kp RGUI
                         >;
                 };
                 lower_layer {
