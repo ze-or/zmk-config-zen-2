@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: ze-or
+      url-base: https://github.com/ze-or
   projects:
     - name: zmk
-      remote: caksoylar
-      revision: caksoylar/zen-v2
+      remote: ze-or
+      revision: ze-or/zen-v2
       import: app/west.yml
   self:
     path: config
