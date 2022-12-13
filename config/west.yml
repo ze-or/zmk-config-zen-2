@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: ze-or
-      revision: main
+      revision: 617136b45e
       import: app/west.yml
   self:
     path: config
