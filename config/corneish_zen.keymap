@@ -10,20 +10,31 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         label = "SEMIMAK";
 // -----------------------------------------------------------------------------------------
-// | ESC |  F  |  L  |  H  |  V  |  Z  |   |  Q  |  W  |  U  |  O  |  Y  |  ;  |
-// | TAB |  S  |  R  |  N  |  T  |  K  |   |  C  |  D  |  E  |  A  |  I  |  -  |
-// | CTL |  X  |  "  |  B  |  M  |  J  |   |  P  |  G  |  ,  |  .  |  /  | ENT |
+// | TAB |  F  |  L  |  H  |  V  |  Z  |   |  Q  |  W  |  U  |  O  |  Y  |  ;  |
+// | CTL |  S  |  R  |  N  |  T  |  K  |   |  C  |  D  |  E  |  A  |  I  |  -  |
+// | SFT |  X  |  "  |  B  |  M  |  J  |   |  P  |  G  |  ,  |  .  |  /  | ENT |
 //                   | ALT | BSP | SPC |   | SFT | RPT | GUI |
                         bindings = <
-   &kp ESC   &kp F &kp L   &kp H &kp V &kp Z   &kp Q &kp W  &kp U     &kp O   &kp Y    &kp SEMI
-   &kp TAB   &kp S &kp R   &kp N &kp T &kp K   &kp C &kp D  &kp E     &kp A   &kp I    &kp MINUS
-   &kp LCTRL &kp X &kp SQT &kp B &kp M &kp J   &kp P &kp G  &kp COMMA &kp DOT &kp FSLH &kp RET
+   &kp TAB   &kp F &kp L   &kp H &kp V &kp Z   &kp Q &kp W  &kp U     &kp O   &kp Y    &kp SEMI
+   &kp LCTRL &kp S &kp R   &kp N &kp T &kp K   &kp C &kp D  &kp E     &kp A   &kp I    &kp MINUS
+   &kp LSHFT &kp X &kp SQT &kp B &kp M &kp J   &kp P &kp G  &kp COMMA &kp DOT &kp FSLH &kp RET
                  &kp RALT &kp BKSP &kp SPACE   &key_repeat &kp RSHFT &kp RGUI
                         >;
                 };
