@@ -76,7 +76,7 @@
    &kp TAB   &kp F &kp L   &kp H &kp V &kp Z   &kp Q &kp W  &kp U     &kp O   &kp Y    &kp SEMI
    &kp LCTRL &kp S &kp R   &kp N &kp T &kp K   &kp C &kp D  &kp E     &kp A   &kp I    &kp MINUS
    &kp LSHFT &kp X &kp SQT &kp B &kp M &kp J   &kp P &kp G  &kp COMMA &kp DOT &kp FSLH &kp RET
-                    &mo 3 &kp BKSP &kp SPACE   &key_repeat &kp RSHFT &mo 2
+                    &mo 4 &kp BKSP &kp SPACE   &key_repeat &kp RSHFT &mo 3
                         >;
                 };
                 qwerty_layer {
@@ -85,6 +85,15 @@
    &trans &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
    &trans &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &trans &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &trans
+                   &trans &trans &trans   &trans &trans &trans
+                        >;
+                };
+                typehack_layer {
+                        label = "TYPEHACK";
+                        bindings = <
+   &trans &kp J &kp G &kp H &kp P &kp F   &kp Q &kp V     &kp O   &kp U   &kp SEMI &kp FSLH
+   &trans &kp R &kp S &kp N &kp T &kp K   &kp Y &kp I     &kp A   &kp E   &kp L    &kp MINUS
+   &trans &kp Z &kp W &kp M &kp D &kp B   &kp C &kp COMMA &kp SQT &kp DOT &kp X    &trans
                    &trans &trans &trans   &trans &trans &trans
                         >;
                 };
@@ -99,7 +108,7 @@
    &kp TILDE &kp EXCL  &kp AT  &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &kp PIPE
    &kp GRAVE &kp N1    &kp N2  &kp N3   &kp N4   &kp N5      &kp N6    &kp N7    &kp N8          &kp N9    &kp N0   &kp BSLH
    &trans    &kp COMMA &kp DOT &kp LBKT &kp RBKT &kp LBRC    &kp RBRC  &kp EQUAL &kp PLUS        &kp MINUS &kp FSLH &trans
-                          	   &mo 4    &trans   &trans      &trans    &trans    &trans
+                          	   &mo 5    &trans   &trans      &trans    &trans    &trans
                         >;
                 };
 
@@ -114,18 +123,18 @@
    &trans   &kp F1 &kp F2  &kp F3  &kp F4  &none    &kp HOME &none     &kp UP   &none           &kp PG_UP &none
    &kp CAPS &kp F5 &kp F6  &kp F7  &kp F8  &none    &kp END  &kp LEFT  &kp DOWN &kp RIGHT       &kp PG_DN &none
    &trans   &kp F9 &kp F10 &kp F11 &kp F12 &none    &kp INS  &kp PSCRN &kp SLCK &kp PAUSE_BREAK &trans    &trans
-                    	   &trans  &kp DEL &trans   &trans   &trans    &mo 4
+                    	   &trans  &kp DEL &trans   &trans   &trans    &mo 5
                         >;
                 };
                 double_layer {
                         label = "CONFIG";
 // -----------------------------------------------------------------------------------------
-// |       | SEM | QWE |     |     |     |   |     | LCLK | MSUP | RCLK | SCUP |      |
+// |       | SEM | QWE | TYP |     |     |   |     | LCLK | MSUP | RCLK | SCUP |      |
 // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |   |     | MSLF | MSDN | MSRT | SCDN |      |
 // |       |     |     |     |     |     |   |     |      |      |      |      |      |
 //                     |     |     |     |   |     |      |      |
                         bindings = <
-   &none      &to 0        &to 1        &none        &none        &none          &none &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &mwh SCROLL_UP   &none
+   &none      &to 0        &to 1        &to 2        &none        &none          &none &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &mwh SCROLL_UP   &none
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_DOWN &none
    &none      &none        &none        &none        &none        &none          &none &none          &none          &none           &none            &none
                     	       &none     &none     &none                         &none &none          &none
