@@ -352,7 +352,7 @@
    &trans &kp R  &kp S  &kp N  &kp I  &trans   &trans &kp I  &kp N  &kp S  &kp R  &trans
    &trans &kp A  &kp O  &kp T  &kp E  &trans   &trans &kp E  &kp T  &kp O  &kp A  &trans
    &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-				&kp trans &kp SPACE &kp BSPC   &kp BSPC &kp SPACE &kp trans
+				   &trans &kp SPACE &kp BSPC   &kp BSPC &kp SPACE &trans
 					>;
 				};
                 lower_layer {
