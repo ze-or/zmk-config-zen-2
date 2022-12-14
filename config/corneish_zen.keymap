@@ -50,51 +50,7 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        combo_lshft {
-            timeout-ms = <50>;
-            key-positions = <13 25>;
-            bindings = <&kp LSHFT>;
-        };
-        combo_lctrl {
-            timeout-ms = <50>;
-            key-positions = <14 26>;
-            bindings = <&kp LCTRL>;
-        };
-        combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <15 27>;
-            bindings = <&kp LGUI>;
-        };
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <16 28>;
-            bindings = <&kp LALT>;
-        };
-        combo_rshft {
-            timeout-ms = <50>;
-            key-positions = <22 34>;
-            bindings = <&kp RSHFT>;
-        };
-        combo_rctrl {
-            timeout-ms = <50>;
-            key-positions = <21 33>;
-            bindings = <&kp RCTRL>;
-        };
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <20 32>;
-            bindings = <&kp RGUI>;
-        };
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <19 31>;
-            bindings = <&kp RALT>;
-        };
+		
 		COMBO(1,&kp LS(E),BLI LOT)
 		COMBO(2,&kp LS(E),BRI ROT)
 		COMBO(3,&kp LS(T),BLM LOT)
@@ -301,6 +257,52 @@
 		COMBO(204,&kp DEL,TRI TRM TRR ROT)
 		COMBO(205,&kp RALT,BLI BLM BLR LIT)
 		COMBO(206,&kp RALT,BRI BRM BRR RIT)
+		
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        combo_lshft {
+            timeout-ms = <50>;
+            key-positions = <13 25>;
+            bindings = <&kp LSHFT>;
+        };
+        combo_lctrl {
+            timeout-ms = <50>;
+            key-positions = <14 26>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_lgui {
+            timeout-ms = <50>;
+            key-positions = <15 27>;
+            bindings = <&kp LGUI>;
+        };
+        combo_lalt {
+            timeout-ms = <50>;
+            key-positions = <16 28>;
+            bindings = <&kp LALT>;
+        };
+        combo_rshft {
+            timeout-ms = <50>;
+            key-positions = <22 34>;
+            bindings = <&kp RSHFT>;
+        };
+        combo_rctrl {
+            timeout-ms = <50>;
+            key-positions = <21 33>;
+            bindings = <&kp RCTRL>;
+        };
+        combo_rgui {
+            timeout-ms = <50>;
+            key-positions = <20 32>;
+            bindings = <&kp RGUI>;
+        };
+        combo_ralt {
+            timeout-ms = <50>;
+            key-positions = <19 31>;
+            bindings = <&kp RALT>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -340,10 +342,10 @@
 				taipo_layer {
 						label = "Taipo";
 						bindings = <
-   &trans &kp R  &kp S  &kp N  &kp I  &trans   &trans &kp I  &kp N  &kp S  &kp R  &trans
-   &trans &kp A  &kp O  &kp T  &kp E  &trans   &trans &kp E  &kp T  &kp O  &kp A  &trans
-   &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-				   &trans &kp SPACE &kp BSPC   &kp BSPC &kp SPACE &trans
+   &none &kp R &kp S &kp N &kp I &none   &none &kp I  kp N &kp S &kp R &none
+   &none &kp A &kp O &kp T &kp E &none   &none &kp E &kp T &kp O &kp A &none
+   &none &none &none &none &none &none   &none &none &none &none &none &none
+			  trans &kp SPACE &kp BSPC   &kp BSPC &kp SPACE &trans
 						>;
 				};
 				plover_layer {
