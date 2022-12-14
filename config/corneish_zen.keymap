@@ -37,7 +37,7 @@
     timeout-ms = <50>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-	layers = <4>
+	layers = <4>;
   };
 
 / {
