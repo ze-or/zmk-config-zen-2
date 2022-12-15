@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: ze-or
-      revision: caksoylar/zen-v2+mouse
+      revision: caksoylar/zen-v2+mouse+plover
       import: app/west.yml
   self:
     path: config
