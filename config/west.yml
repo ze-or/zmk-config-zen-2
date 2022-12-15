@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: dnaq
-      url-base: https://github.com/dnaq
+    - name: ze-or
+      url-base: https://github.com/ze-or
   projects:
     - name: zmk
-      remote: dnaq
-      revision: dnaq/plover-hid-hog-attempt
+      remote: ze-or
+      revision: caksoylar/zen-v2
       import: app/west.yml
   self:
     path: config
