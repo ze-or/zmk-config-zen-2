@@ -350,10 +350,10 @@
 				plover_layer {
 					label = "Plover";
 					bindings = <
-   &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-				        &trans &trans &trans   &trans &trans &trans
+   &kp trans &kp PLV_SL &kp PLV_TL &kp PLV_PL &kp PLV_HL &kp PLV_ST    &kp PLV_ST &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR &kp PLV_DR
+   &kp trans &kp PLV_SL &kp PLV_KL &kp PLV_WL &kp PLV_RL &kp PLV_ST    &kp PLV_ST &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR &kp PLV_ZR
+   &kp trans &kp PLV_NM &kp PLV_NM &kp PLV_NM &kp PLV_NM &kp PLV_NM    &kp PLV_NM &kp PLV_NM &kp PLV_NM &kp PLV_NM &kp PLV_NM &trans
+				                         &trans &kp PLV_A &kp PLV_O    &kp PLV_E &kp PLV_U &trans
 					>;
 				};
                 lower_layer {
