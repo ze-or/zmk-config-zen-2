@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: ze-or
+      url-base: https://github.com/ze-or
   projects:
     - name: zmk
-      remote: caksoylar
+      remote: ze-or
       revision: caksoylar/zen-v2+experimental+mouse
       import: app/west.yml
   self:
