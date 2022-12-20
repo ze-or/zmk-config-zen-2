@@ -303,6 +303,16 @@
 		COMBO(205,&kp RALT,BLI BLM BLR LIT)
 		COMBO(206,&kp RALT,BRI BRM BRR RIT)
     };
+
+ZMK_BEHAVIOR(hm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    global-quick-tap-ms = <150>;        // requires PR #1387
+    bindings = <&kp>, <&kp>;
+    hold-trigger-on-release;            // requires PR #1423
+)
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -314,10 +324,10 @@
 // | SFT |  X  |  "  |  B  |  M  |  J  |   |  P  |  G  |  ,  |  .  |  /  | ENT |
 //                   | NAV | BSP | SPC |   | RPT | SFT | NUM |
                         bindings = <
-   &kp TAB   &kp F &kp L   &kp H &kp V &kp Z   &kp Q &kp W  &kp U     &kp O   &kp Y    &kp SEMI
-   &kp LCTRL &kp S &kp R   &kp N &kp T &kp K   &kp C &kp D  &kp E     &kp A   &kp I    &kp MINUS
-   &kp LSHFT &kp X &kp SQT &kp B &kp M &kp J   &kp P &kp G  &kp COMMA &kp DOT &kp FSLH &kp RET
-                    &mo 6 &kp BKSP &kp SPACE   &key_repeat &kp RSHFT &mo 5
+   &kp TAB   &kp F       &kp L         &kp H      &kp V      &kp Z   &kp Q &kp W  &kp U     &kp O   &kp Y    &kp SEMI
+   &kp LCTRL &hm LSHFT S &hm LCTRL R   &hm LGUI N &hm LALT T &kp K   &kp C &kp D  &kp E     &kp A   &kp I    &kp MINUS
+   &kp LSHFT &kp X       &kp SQT       &kp B      &kp M      &kp J   &kp P &kp G  &kp COMMA &kp DOT &kp FSLH &kp RET
+                                          &mo 6 &kp BKSP &kp SPACE   &key_repeat &kp RSHFT &mo 5
                         >;
                 };
                 qwerty_layer {
