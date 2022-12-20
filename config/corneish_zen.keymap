@@ -40,6 +40,15 @@
 	layers = <3>; \
   };
 
+ZMK_BEHAVIOR(hm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    global-quick-tap-ms = <150>;        // requires PR #1387
+    bindings = <&kp>, <&kp>;
+    hold-trigger-on-release;            // requires PR #1423
+)
+
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
@@ -303,15 +312,6 @@
 		COMBO(205,&kp RALT,BLI BLM BLR LIT)
 		COMBO(206,&kp RALT,BRI BRM BRR RIT)
     };
-
-ZMK_BEHAVIOR(hm, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    global-quick-tap-ms = <150>;        // requires PR #1387
-    bindings = <&kp>, <&kp>;
-    hold-trigger-on-release;            // requires PR #1423
-)
 
         keymap {
                 compatible = "zmk,keymap";
