@@ -40,13 +40,13 @@
 	layers = <3>; \
   };
 
-ZMK_BEHAVIOR(hm, hold_tap,
+ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    global-quick-tap-ms = <150>;        // requires PR #1387
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap-ms = <150>;         // requires PR #1387
     bindings = <&kp>, <&kp>;
-    hold-trigger-on-release;            // requires PR #1423
+    hold-trigger-on-release;             // requires PR #1423
 )
 
 / {
