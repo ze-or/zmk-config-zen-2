@@ -51,6 +51,7 @@
 / {
 	behaviors {
 		hm: homerow_mods {
+				compatible = "zmk,behavior-hold-tap";
 			    flavor = "balanced";
 				tapping-term-ms = <280>;
 				quick-tap-ms = <175>;                // repeat on tap-into-hold
