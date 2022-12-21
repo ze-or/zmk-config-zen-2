@@ -53,7 +53,7 @@
 		hm: homerow_mods {
 				compatible = "zmk,behavior-hold-tap";
 			    flavor = "balanced";
-				tapping-term-ms = <280>;
+				tapping-term-ms = <22r0>;
 				quick-tap-ms = <175>;                // repeat on tap-into-hold
 				global-quick-tap-ms = <150>;         // requires PR #1387
 				bindings = <&kp>, <&kp>;
@@ -70,7 +70,6 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-			layers = <3 4 5 6 7>;
         };
         combo_lshft {
             timeout-ms = <50>;
@@ -339,28 +338,28 @@
 // | SFT |  X  |  "  |  B  |  M  |  J  |   |  P  |  G  |  ,  |  .  |  /  | ENT |
 //                   | NAV | BSP | SPC |   | RPT | SFT | NUM |
                         bindings = <
-   &kp TAB   &kp F       &kp L         &kp H      &kp V      &kp Z   &kp Q &kp W       &kp U          &kp O         &kp Y          &kp SEMI
-   &kp LCTRL &hm LSHFT S &hm LCTRL R   &hm LGUI N &hm LALT T &kp K   &kp C &hm RALT D  &hm RGUI E     &hm RCTRL A   &hm RSHFT I    &kp MINUS
-   &kp LSHFT &kp X       &kp SQT       &kp B      &kp M      &kp J   &kp P &kp G       &kp COMMA      &kp DOT       &kp FSLH       &kp RET
+   &kp TAB   &kp F       &kp L         &kp H      &kp V      &kp Z   &kp Q &kp W       &kp U      &kp O       &kp Y       &kp SEMI
+   &kp LCTRL &hm LSHFT S &hm LCTRL R   &hm LGUI N &hm LALT T &kp K   &kp C &hm RALT D  &hm RGUI E &hm RCTRL A &hm RSHFT I &kp MINUS
+   &kp LSHFT &kp X       &kp SQT       &kp B      &kp M      &kp J   &kp P &kp G       &kp COMMA  &kp DOT     &kp FSLH    &kp RET
                                           &mo 6 &kp BKSP &kp SPACE   &key_repeat &kp RSHFT &mo 5
                         >;
                 };
                 qwerty_layer {
                         label = "QWERTY";
                         bindings = <
-   &trans &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
-   &trans &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &trans &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &trans
-                   &trans &trans &trans   &trans &trans &trans
+   &trans &kp Q       &kp W       &kp E      &kp R      &kp T   &kp Y &kp U       &kp I      &kp O       &kp P          &kp MINUS
+   &trans &hm LSHFT A &hm LCTRL S &hm LGUI D &hm LALT F &kp G   &kp H &hm RALT J  &hm RGUI K &hm RCTRL L &hm RSHFT SEMI &kp SQT
+   &trans &kp Z       &kp X       &kp C      &kp V      &kp B   &kp N &kp M       &kp COMMA  &kp DOT     &kp FSLH       &trans
+                                         &trans &trans &trans   &trans &trans &trans
                         >;
                 };
                 typehack_layer {
                         label = "TypeHacK";
                         bindings = <
-   &trans &kp J &kp G &kp H &kp P &kp F   &kp Q &kp V     &kp O   &kp U   &kp SEMI &kp FSLH
-   &trans &kp R &kp S &kp N &kp T &kp K   &kp Y &kp I     &kp A   &kp E   &kp L    &kp MINUS
-   &trans &kp Z &kp W &kp M &kp D &kp B   &kp C &kp COMMA &kp SQT &kp DOT &kp X    &trans
-                   &trans &trans &trans   &trans &trans &trans
+   &trans &kp J       &kp G       &kp H      &kp P      &kp F   &kp Q &kp V      &kp O      &kp U       &kp SEMI    &kp FSLH
+   &trans &hm LSHFT R &hm LCTRL S &hm LGUI N &hm LALT T &kp K   &kp Y &hm RALT I &hm RGUI A &hm RCTRL E &hm RSHFT L &kp MINUS
+   &trans &kp Z       &kp W       &kp M      &kp D      &kp B   &kp C &kp COMMA  &kp SQT    &kp DOT     &kp X       &trans
+                                         &trans &trans &trans   &trans &trans &trans
                         >;
                 };
 				taipo_layer {
@@ -393,10 +392,10 @@
 // |     |  ,  |  .  |  [  |  ]  |  {  |   |  }  |  =  |  +  |  -  |  /  |     |
 //                   | CON |     |     |   |     |     |     |
                         bindings = <
-   &kp TILDE &kp EXCL  &kp AT  &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &kp PIPE
-   &kp GRAVE &kp N1    &kp N2  &kp N3   &kp N4   &kp N5      &kp N6    &kp N7    &kp N8          &kp N9    &kp N0   &kp BSLH
-   &trans    &kp COMMA &kp DOT &kp LBKT &kp RBKT &kp LBRC    &kp RBRC  &kp EQUAL &kp PLUS        &kp MINUS &kp FSLH &trans
-                          	   &mo 7    &trans   &trans      &trans    &trans    &trans
+   &kp TILDE &kp EXCL     &kp AT       &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET &kp AMPS    &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp PIPE
+   &kp GRAVE &hm LSHFT N1 &hm LCTRL N2 &hm LGUI N3 &hm LALT N4 &kp N5      &kp N6    &hm RALT N7 &hm RGUI N8     &hm RCTRL N9 &hm RSHFT N0 &kp BSLH
+   &trans    &kp COMMA    &kp DOT      &kp LBKT    &kp RBKT    &kp LBRC    &kp RBRC  &kp EQUAL   &kp PLUS        &kp MINUS    &kp FSLH     &trans
+                          			   &mo 7	   &trans	   &trans      &trans    &trans      &trans
                         >;
                 };
 
