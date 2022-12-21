@@ -70,55 +70,55 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_lshft {
             timeout-ms = <50>;
             key-positions = <13 25>;
             bindings = <&kp LSHFT>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_lctrl {
             timeout-ms = <50>;
             key-positions = <14 26>;
             bindings = <&kp LCTRL>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_lgui {
             timeout-ms = <50>;
             key-positions = <15 27>;
             bindings = <&kp LGUI>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_lalt {
             timeout-ms = <50>;
             key-positions = <16 28>;
             bindings = <&kp LALT>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_rshft {
             timeout-ms = <50>;
             key-positions = <22 34>;
             bindings = <&kp RSHFT>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_rctrl {
             timeout-ms = <50>;
             key-positions = <21 33>;
             bindings = <&kp RCTRL>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_rgui {
             timeout-ms = <50>;
             key-positions = <20 32>;
             bindings = <&kp RGUI>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
         combo_ralt {
             timeout-ms = <50>;
             key-positions = <19 31>;
             bindings = <&kp RALT>;
-			layers = <3 4 5 6 7>
+			layers = <3 4 5 6 7>;
         };
 		COMBO(1,&kp LS(E),BLI LOT)
 		COMBO(2,&kp LS(E),BRI ROT)
