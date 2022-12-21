@@ -50,13 +50,15 @@
 
 / {
 	behaviors {
-		hm: homerow_mod {
+		hm: homerow_mods {
 			    flavor = "balanced";
 				tapping-term-ms = <280>;
 				quick-tap-ms = <175>;                // repeat on tap-into-hold
 				global-quick-tap-ms = <150>;         // requires PR #1387
 				bindings = <&kp>, <&kp>;
 				hold-trigger-on-release;             // requires PR #1423
+				#binding-cells = <2>;
+				label = "HOMEROW_MODS";
 		};
 	};
 
